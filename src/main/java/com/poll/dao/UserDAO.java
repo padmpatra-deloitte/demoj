@@ -48,7 +48,7 @@ public class UserDAO {
 		return user;
 	}
 	
-	public User findUserByEmail(String email) {
+	public User findUserByEmail(String email, String password) {
 		User user = new User();
 		Connection connection = ConnectionUtil.getConnection();
 
